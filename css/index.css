@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background: url(../images/backcover.svg) no-repeat top right / 45%;
+}
+
+/* Navbar */
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 25px 100px;
+}
+
+nav img {
+    width: 6.5em;
+}
+
+nav .nav-items {
+    display: flex;
+    color: #222b75;
+}
+
+nav .nav-items h5 {
+    margin: 15px;
+}
+
+nav .nav-items h5:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/* Buttons */
+
+button {
+    background-image: linear-gradient(to right, #965cf2 , #ff8adc);
+    border: none;
+    color: white;
+}
+
+button:hover {
+    cursor: pointer;
+    background-image: linear-gradient(to right, #752fe6 , #f55ac6);
+}
+
+nav button {
+    border-radius: 20px;
+    padding: 5px 10px;
+    font-size: small;
+}
+
+.left-section button {
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: large;
+}
+
+/* Left Content */
+
+.left-section {
+    margin: 100px 100px;
+}
+
+.left-section h1 {
+    font-size: 5em;
+    font-weight: bold;
+    color: #3e4794;
+    margin-bottom: 30px;
+}
+
+.left-section h4 {
+    font-size: 13px;
+    font-weight: 500;
+    color: gray;
+    width: 30em;
+    margin-bottom: 50px;
+    line-height: 1.5em;
+}
+
+/* Right Images */
+
+.imgs-div img:last-child {
+    width: 40%;
+    position: absolute;
+    right: 4em;
+    bottom: 1em;
+    z-index: -1;
+}
+
+.imgs-div img:first-child {
+    width: 6%;
+    position: absolute;
+    left: 47em;
+    bottom: 6em;
+    z-index: -1;
+}
+
+.imgs-div img:first-child+img {
+    position: absolute;
+    left: 49.7em;
+    bottom: 10.3em;
+    z-index: -1;
+}
